@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Container */
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg,skyblue,blue);
+  transition: 0.4s;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+/* Card */
+.card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  background: white;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+.dark .card {
+  background: #1e1e1e;
+}
+
+/* Image */
+.profile-img {
+  width: 120px;
+  height:120px;
+  border-radius: 50%;
+  object-fit:cover;
+  margin-bottom: 10px;
+}
+
+/* Skills */
+.Skill {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.bar {
+  height: 6px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.bar div {
+  height: 100%;
+  border-radius: 5px;
+  animation: load 1.5s ease;
+}
+
+.react { width: 80%; background: #61dafb; }
+.js { width: 70%; background: #f7df1e; }
+.css { width: 75%; background: #264de4; }
+.html{width:85%; background:aquamarine}
+
+@keyframes load {
+  from { width: 0; }
+}
+
+/* Buttons */
+.btn a{
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Professional Social Accounts a {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background:burlywood;
+  color:blanchedalmond;
+  cursor: pointer;
+}
+
+/* Toggle */
+.toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
